@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Hind+Siliguri&display=swap');
+
+:root{
+    --cor-primaria:  rgb(9, 0, 26);
+    --cor-secundaria: rgb(255, 255, 255);
+    --cor-terciaria: #d46204;
+    --cor-hovere: #1f1f1f77;
+
+    --fonte-principal: "Antom", sans-serif ;
+    --fonte-secundaria: "Hind Siliguri";
+
+    --tamanho-texto-h1: 2.25rem /* 36/ 16*/;
+    --tamanho-texto-h2: 1.6rem ;
+    --tamanho-texto-p: 1.5rem;
+    --tamanho-texto-rodape: 1.25rem;
+    
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    box-sizing: border-box ;
+    background-color:var(--cor-primaria);
+    color: var(--cor-secundaria);
+}
+
+.cabecalho{
+    padding: 2% 0% 0% 15%;
+}
+
+.cabecalho__menu{
+  display: flex;
+  gap: 80px
+}
+
+.cabecalho__menu__links{
+    font-family: var(--fonte-principal);
+    font-weight: 600;
+    font-size: var(--tamanho-texto-p);
+    color: var(--cor-terciaria);
+    text-decoration: none;
+}
+
+.apresentacao{
+    margin: 5% 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    gap: 82px;
+}
+
+.apresentacao__titulo{
+    font-family: var(--fonte-principal);
+    font-weight: 600;
+    font-style: normal;
+    font-size: var(--tamanho-texto-h1);
+}
+
+.projeto {
+    margin: 20px;
+    padding: 40px;
+    background-color: var(--cor-hovere);
+    border-radius: 40px;
+    display: inline-block;
+    width: 300px;
+}
+
+.projeto img {
+    width: 100%;
+    height: 200px;  
+    border-radius: 5px;
+}
+
+.projeto h3 {
+    font-family: var(--fonte-principal);
+    margin-top: 10px;
+    font-size: 30px;
+}
+.projeto h4 {
+    font-family: var(--fonte-secundaria);
+    font-size: 20px;
+}
+.projeto p {
+    font-size: 18px;
+    margin: 10px 0;
+    font-family: var(--fonte-secundaria);
+    
+}
+
+.tecnologias {
+    margin: 10px 0;
+    font-family: var(--fonte-secundaria);
+    
+}
+.tec__icons{
+    display: flex;
+    justify-content: center;
+}
+
+.tecnologias img {
+    width: 60px;
+    height: 60px;
+}
+
+
+.buttons {
+    margin-top: 10px;
+}
+
+.buttons a {
+    text-decoration: none;
+    color: white;
+    background-color: #d66422;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin: 5px;
+    display: inline-block;
+    font-family: var(--fonte-secundaria);
+}
+
+.buttons a:hover {
+    background-color: #c0501f;
+}
+
+
+.rodape_project{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center; 
+    background-color: var(--cor-terciaria);
+    padding: 5px;
+    margin: -2% 0% 0% 0%;
+    font-size: var(--tamanho-texto-rodape);
+    font-family: var(--fonte-principal);
+    font-weight: 400;
+    font-style: normal;
+}
+
+.rodape p {
+    margin: 0;
+    font-family: var(--fonte-principal);
+}
+
+.redes__sociais a {
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+.redes__sociais img {
+    width: 40px;
+}
+
+@media(max-width: 900px){
+    .cabecalho{
+        padding: 10% 0% 0%;
+
+    }
+    .cabecalho__menu{
+        justify-content: center;
+    }
+    .apresentacao{
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+    .apresentacao__conteudo{
+        width: auto; /*auto para 100% tem zero de diferença */
+    }
+    .apresentacao__links__botoes{
+        width: auto;
+    }
+    .apresentacao__about{
+        flex-direction: column-reverse;
+        padding: 5%;
+        gap: 50px;
+    }
+
+    .apresentacao__imagem__foto{
+        width: 80%;
+    }
+}
